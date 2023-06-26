@@ -40,6 +40,14 @@ h2 {
   font-weight: normal;
 }
 
+h3 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
 a {
   text-decoration: none;
   color: var(--color-accent);
@@ -66,7 +74,7 @@ nav {
   width: fit-content;
 
   margin-top: 10vh;
-  margin-left: 15vw;
+  margin-left: 18vw;
 }
 
 nav > div {
@@ -95,4 +103,8 @@ footer {
 
 footer > span {
   display: flex;
+}
+
+footer > span > p {
+  font-size: 1rem;
 }
