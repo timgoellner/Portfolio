@@ -12,9 +12,11 @@
   --color-text: #EEEEEE;
 }
 
-* {
+*, ::before, ::after {
   padding: 0;
   margin: 0;
+
+  box-sizing: border-box;
 }
 
 body {
@@ -30,6 +32,7 @@ body {
 
 h1 {
   font-size: 2.5rem;
+  line-height: 3rem;
 }
 
 h2 {
