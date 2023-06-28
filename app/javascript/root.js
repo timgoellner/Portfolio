@@ -1,4 +1,4 @@
-addEventListener("load", (event) => appearAnimations())
+addEventListener("turbo:load", (event) => appearAnimations())
 addEventListener("scroll", (event) => appearAnimations())
 
 function appearAnimations() {
