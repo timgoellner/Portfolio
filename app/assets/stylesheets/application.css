@@ -85,7 +85,21 @@ svg {
   }
 }
 
-.animation_appear {
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.appear {
   position: relative;
   width: fit-content;
 
@@ -94,7 +108,7 @@ svg {
   animation: appear .5s .1s ease-in forwards;
 }
 
-.animation_appear::before {
+.appear::before {
   content: '';
 
   position: absolute;
@@ -103,6 +117,11 @@ svg {
   background-color: var(--color-accent);
 
   animation: revealer 1s .1s ease-in-out forwards;
+}
+
+.animation_appear,
+.animation_fadeIn {
+  opacity: 0;
 }
 
 /*

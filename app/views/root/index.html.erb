@@ -1,5 +1,6 @@
 <% content_for :head do %>
   <%= stylesheet_link_tag 'root' %>
+  <%= javascript_include_tag 'root' %>
 <% end %>
 
 <div class='page_location'>
@@ -12,10 +13,10 @@
 
 <main>
   <section class='about_me'>
-    <%= image_tag 'root/pp.jpg', alt: 'Profile Image' %>
+    <%= image_tag 'root/pp.jpg', alt: 'Profile Image', class: 'animation_fadeIn' %>
     <h1 class='animation_appear'>Hi, I'm Tim.<br>I do programming.</h1>
-    <p>I'm a 16 year old German hobby software developer.<br>In my free time, I play Games and do competitive swimming.</p>
-    <div class='about_me_post'>
+    <p class='animation_fadeIn'>I'm a 16 year old German hobby software developer.<br>In my free time, I play Games and do competitive swimming.</p>
+    <div class='about_me_post animation_fadeIn'>
       <h3>Latest Post:</h3>
       <%= link_to 'Sample Post', '/' %>
       <p>Sample post desc</p>
