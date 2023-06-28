@@ -32,7 +32,6 @@ body {
 
 h1 {
   font-size: 2.5rem;
-  line-height: 3rem;
 }
 
 h2 {
@@ -59,6 +58,70 @@ a:hover {
 
 svg {
   fill: var(--color-accent);
+}
+
+/*
+  animations
+*/
+
+@keyframes appear {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes revealer {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  50% {
+    clip-path: inset(0 0 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 100%);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.appear {
+  position: relative;
+  width: fit-content;
+
+  clip-path: inset(0 100% 0 0);
+  
+  animation: appear .5s .1s ease-in forwards;
+}
+
+.appear::before {
+  content: '';
+
+  position: absolute;
+  inset: 0;
+
+  background-color: var(--color-accent);
+
+  animation: revealer 1s .1s ease-in-out forwards;
+}
+
+.animation_appear,
+.animation_fadeIn {
+  opacity: 0;
 }
 
 /*
