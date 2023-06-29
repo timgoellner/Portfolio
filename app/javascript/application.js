@@ -1,9 +1,9 @@
 // Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
-import "@hotwired/turbo-rails"
-import "controllers"
+import '@hotwired/turbo-rails'
+import 'controllers'
 
-addEventListener("turbo:load", (event) => appearAnimations())
-addEventListener("scroll", (event) => appearAnimations())
+addEventListener('turbo:load', (event) => appearAnimations())
+addEventListener('scroll', (event) => appearAnimations())
 
 function appearAnimations() {
   const appearElements = document.querySelectorAll('.animation_appear')
