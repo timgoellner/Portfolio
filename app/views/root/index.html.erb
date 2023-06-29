@@ -21,4 +21,21 @@
       <p>Sample post desc</p>
     </div>
   </section>
+
+  <section class='projects'>
+    <h1 class='animation_appear'>Projects</h1>
+    <div>
+      <% @projects.each do |project| %>
+        <div class='project animation_fadeIn'>
+          <%= link_to project.name, project.link, target: '_blank' %>
+          <p><%= project.description %></p>
+          <div class='project_images'>
+            <% project.project_images.each do |project_image| %>
+              <%= image_tag "root/projects/#{project_image.image_name}.png", alt: project_image.image_name %>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </section>
 </main>

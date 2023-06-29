@@ -20,6 +20,8 @@
 }
 
 body {
+  overflow-x: hidden;
+
   background-color: var(--color-background);
   color: var(--color-text);
 
@@ -154,14 +156,13 @@ nav > div > a {
 */
 
 footer {
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: .5rem;
 
   width: 100vw;
-  bottom: 1rem;
+  margin-top: 10vh;
 }
 
 footer > span {
