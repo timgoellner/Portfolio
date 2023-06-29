@@ -37,10 +37,16 @@ main {
 
   font-size: 1.25rem;
   font-weight: bold;
+
+  transition: border-color .5s;
 }
 
 .page_location > div:nth-child(odd) > p {
   translate: 0 -1px;
+}
+
+.page_location > div:nth-child(odd).active {
+  border-color: var(--color-accent);
 }
 
 .page_location > div:nth-child(even) {
@@ -151,6 +157,7 @@ main {
   flex-direction: column;
 
   margin-top: 40vh;
+  margin-bottom: 20vh;
 }
 
 .tools > div {
