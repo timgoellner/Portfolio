@@ -87,7 +87,7 @@ main {
 
   padding: 1.5rem;
 
-  animation-delay: 1.8s;
+  animation-delay: 1.5s;
 }
 
 .about_me_post > h3 {
@@ -130,6 +130,7 @@ main {
 
 .project > a {
   font-size: 1.6rem;
+  width: fit-content;
 }
 
 .project_images {
@@ -139,4 +140,45 @@ main {
 
 .project_images > img {
   height: 2.5rem;
+}
+
+/*
+  tools
+*/
+
+.tools {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 40vh;
+}
+
+.tools > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  margin-left: 3rem;
+}
+
+.tool {
+  display: grid;
+  grid-template-columns: 25vw max-content;
+  align-items: center;
+  gap: clamp(.5rem, 4vw, 10rem);
+}
+
+.tool > span {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.tool > span > h3 {
+  font-weight: normal;
+  color: var(--color-accent);
+}
+
+.tool > img {
+  width: clamp(6rem, 8.5vw, 15rem);
 }
