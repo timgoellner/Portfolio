@@ -38,4 +38,19 @@
       <% end %>
     </div>
   </section>
+
+  <section class='tools'>
+    <h1 class='animation_appear'>Tools</h1>
+    <div>
+      <% @tools.each do |tool| %>
+        <div class='tool animation_fadeIn'>
+          <span>
+            <h3><%= tool.name %></h3>
+            <p><%= tool.description %></p>
+          </span>
+          <%= image_tag "root/tools/#{tool.image_name}.png", alt: tool.image_name %>
+        </div>
+      <% end %>
+    </div>
+  </section>
 </main>
