@@ -8,8 +8,8 @@ function changePageLocation() {
   let pageLocationNodes = document.querySelector('.page_location').childNodes
   pageLocationNodes = [pageLocationNodes[1], pageLocationNodes[5], pageLocationNodes[9]]
 
-  if (aboutMeLocation < 100 && projectsLocation < 100) var activeNodeId = 2
-  else if (aboutMeLocation < 100) var activeNodeId = 1
+  if (aboutMeLocation < 150 && projectsLocation < 150) var activeNodeId = 2
+  else if (aboutMeLocation < 150) var activeNodeId = 1
   else var activeNodeId = 0
 
   if (pageLocationNodes[activeNodeId].classList.contains('active')) return
