@@ -20,12 +20,22 @@
 }
 
 body {
+  position: relative;
   overflow-x: hidden;
+
+  min-height: 90vh;
 
   background-color: var(--color-background);
   color: var(--color-text);
 
   font-family: system-ui;
+}
+
+main {
+  margin-top: 10vh;
+  margin-left: 25vw;
+
+  padding-bottom: 4.5rem;
 }
 
 /*
@@ -156,14 +166,18 @@ nav > div > a {
 */
 
 footer {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: .5rem;
 
   width: 100vw;
+  height: 4.5rem;
   margin-top: 10vh;
   margin-bottom: 1vh;
+
+  bottom: 0;
 }
 
 footer > span {

@@ -1,7 +1,7 @@
-<% content_for :head do %>
+<head>
   <%= stylesheet_link_tag 'root' %>
   <%= javascript_include_tag 'root' %>
-<% end %>
+</head>
 
 <div class='page_location'>
   <div><p>1</p></div>
@@ -18,8 +18,8 @@
     <p class='animation_fadeIn'>I'm a 16 year old German hobby software developer.<br>In my free time, I play Games and do competitive swimming.</p>
     <div class='about_me_post animation_fadeIn'>
       <h3>Latest Post:</h3>
-      <%= link_to 'Sample Post', '/' %>
-      <p>Sample post desc</p>
+      <%= link_to @latest_post.title, "posts/#{@latest_post.id}" %>
+      <p><%= @latest_post.description%></p>
     </div>
   </section>
 

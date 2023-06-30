@@ -4,11 +4,6 @@ body {
   background-repeat: no-repeat;
 }
 
-main {
-  margin-top: 10vh;
-  margin-left: 25vw;
-}
-
 /*
   page location bar
 */
@@ -173,6 +168,8 @@ main {
   grid-template-columns: 25vw max-content;
   align-items: center;
   gap: clamp(.5rem, 4vw, 10rem);
+
+  animation-delay: .3s;
 }
 
 .tool > span {
