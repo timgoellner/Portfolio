@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_29_141354) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_30_144709) do
+  create_table "posts", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.string "author"
+    t.string "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "project_images", force: :cascade do |t|
     t.integer "project_id"
     t.string "image_name"

@@ -1,1 +1,13 @@
-Posts
+<head>
+  <%= stylesheet_link_tag 'posts/index' %>
+</head>
+
+<main>
+  <% @posts.reverse.each do |post| %>
+    <div class='post'>
+      <%= link_to post.title, "posts/#{post.id}", class: 'animation_appear' %>
+      <p class='post_date animation_fadeIn'><%= post.created_at.strftime('%d-%m-%Y') %></p>
+      <p class='post_description animation_fadeIn'><%= post.description %></p>
+    </div>
+  <% end %>
+</main>
