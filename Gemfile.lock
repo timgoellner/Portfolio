@@ -162,6 +162,7 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
+    redcarpet (3.6.0)
     regexp_parser (2.8.1)
     reline (0.3.5)
       io-console (~> 0.5)
@@ -219,6 +220,7 @@ DEPENDENCIES
   jbuilder
   puma (~> 5.0)
   rails (~> 7.0.5)
+  redcarpet (~> 3.3, >= 3.3.4)
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)
