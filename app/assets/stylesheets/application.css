@@ -9,7 +9,7 @@
   --color-primary: #393E46;
   --color-accent: #00ADB5;
   --color-accent-dark: #00848b;
-  --color-text: #EEEEEE;
+  --color-text: #DDDDDD;
 }
 
 *, ::before, ::after {
@@ -70,6 +70,10 @@ a:hover {
 
 svg {
   fill: var(--color-accent);
+}
+
+svg:hover {
+  fill: var(--color-accent-dark);
 }
 
 /*
