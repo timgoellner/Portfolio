@@ -2,8 +2,27 @@
 import '@hotwired/turbo-rails'
 import 'controllers'
 
-addEventListener('turbo:load', (event) => appearAnimations())
+addEventListener('turbo:load', (event) => {
+  appearAnimations()
+  copyToClipboard()
+})
 addEventListener('scroll', (event) => appearAnimations())
+
+
+function copyToClipboard() {
+  const link_elements = document.querySelectorAll('.copy_to_clipboard')
+
+  link_elements.forEach(link_element => {
+    link_element.addEventListener('click', (event) => {
+      event.preventDefault()
+      navigator.clipboard.writeText(link_element.getAttribute('copy_text'))
+
+      link_element.classList.remove('copy')
+      link_element.offsetWidth
+      link_element.classList.add('copy')
+    })
+  })
+}
 
 function appearAnimations() {
   const appearElements = document.querySelectorAll('.animation_appear')

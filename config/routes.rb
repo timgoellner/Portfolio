@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get '/posts/:id', to: 'posts#show'
 
   get '/contact', to: 'contact#index'
+  post '/contact', to: 'contact#create'
 end

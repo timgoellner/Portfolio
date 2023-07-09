@@ -38,6 +38,10 @@ main {
   animation-delay: 1s;
 }
 
+svg {
+  scale: .95;
+}
+
 .post_info > div {
   display: flex;
   gap: .5rem;

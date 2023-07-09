@@ -30,6 +30,9 @@ gem "jbuilder"
 # Markdown
 gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 
+# POST requests for contact
+gem 'httparty', '~> 0.21.0'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
