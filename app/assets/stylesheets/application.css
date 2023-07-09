@@ -77,6 +77,29 @@ svg:hover {
 }
 
 /*
+  copy to clipboard animation
+*/
+
+@keyframes jump {
+  25% {
+    translate: 0 -4px;
+  }
+  50% {
+    translate: 0 0;
+  }
+  75% {
+    translate: 0 -2px;
+  }
+  100% {
+    translate: 0 0;
+  }
+}
+
+.copy {
+  animation: jump .5s ease-in-out;
+}
+
+/*
   apear animations
 */
 

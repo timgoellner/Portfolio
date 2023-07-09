@@ -1,0 +1,18 @@
+main {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  margin-left: 30vw;
+}
+
+a {
+  display: inline-block;
+}
+
+.infos {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.3rem;
+
+  animation-delay: .5s;
+}
