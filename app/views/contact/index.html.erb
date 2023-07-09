@@ -9,4 +9,21 @@
     <br><br>
     I am also available via the username <a href='' class='copy_to_clipboard' copy_text='sirroti'>sirroti</a> on Discord. 
   </div>
+  <%= form_with method: :post, class: 'animation_fadeIn contact_form' do |form| %>
+    <div>
+      <%= form.label :email %>
+      <%= form.email_field :email, required: true, maxlength: 75, class: 'email_field' %>
+    </div>
+    <div>
+      <%= form.label :message %>
+      <%= form.text_area :message, required: true, maxlength: 1024, class: 'message_field' %>
+    </div>
+
+    <span class='contact_form_action'>
+      <%= form.submit 'Send', class: 'submit' %>
+      <% flash.each do |key, value| %>
+        <p class='notice'><%= value %></p>
+      <% end %>
+    </span>
+  <% end %>
 </main>

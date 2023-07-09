@@ -9,7 +9,8 @@
   --color-primary: #393E46;
   --color-accent: #00ADB5;
   --color-accent-dark: #00848b;
-  --color-text: #DDDDDD;
+  --color-text: #EEEEEE;
+  --color-text-dark: #CCCCCC;
 }
 
 *, ::before, ::after {
