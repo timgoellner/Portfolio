@@ -22,4 +22,18 @@
     </div>
   </section>
   <hr class='spacer animation_fadeIn'>
+  <section class='post_navigate animation_fadeIn'>
+    <div>
+      <% unless @older.nil? %>
+        <p>← Older</p>
+        <%= link_to @older.title, @older.id.to_s %>
+      <% end %>
+    </div>
+    <div>
+      <% unless @newer.nil? %>
+        <p>Newer →</p>
+        <%= link_to @newer.title, @newer.id.to_s %>
+      <% end %>
+    </div>
+  </section>
 </main>
