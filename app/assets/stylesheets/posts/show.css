@@ -6,6 +6,10 @@ main {
   margin-left: 30vw;
 }
 
+/*
+  post body
+*/
+
 .post > h1 {
   margin-bottom: .5rem;
   line-height: 2.5rem;
@@ -25,11 +29,19 @@ main {
   font-weight: bold;
 }
 
+/*
+  section seperater
+*/
+
 .spacer {
   height: 2px;
   background-color: var(--color-primary);
   animation-delay: 1s;
 }
+
+/*
+  post info/sharing
+*/
 
 .post_info {
   display: flex;
@@ -45,4 +57,22 @@ svg {
 .post_info > div {
   display: flex;
   gap: .5rem;
+}
+
+/*
+  post navigation
+*/
+
+.post_navigate {
+  display: flex;
+  justify-content: space-between;
+
+  animation-delay: 1.5s;
+}
+
+.post_navigate > div {
+  display: flex;
+  flex-direction: column;
+  
+  font-size: 1.25rem;
 }

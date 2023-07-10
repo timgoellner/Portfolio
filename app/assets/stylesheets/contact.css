@@ -9,6 +9,10 @@ a {
   display: inline-block;
 }
 
+/*
+  contact information
+*/
+
 .infos {
   margin-top: 1.5rem;
   font-size: 1.25rem;
@@ -16,6 +20,10 @@ a {
 
   animation-delay: .5s;
 }
+
+/*
+  contact message form
+*/
 
 .contact_form {
   display: flex;

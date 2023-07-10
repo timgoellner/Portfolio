@@ -77,6 +77,12 @@ svg:hover {
   fill: var(--color-accent-dark);
 }
 
+code {
+  background-color: var(--color-primary);
+  padding: .1rem;
+  border-radius: .2rem;
+}
+
 /*
   copy to clipboard animation
 */
