@@ -108,6 +108,14 @@ body {
 
     translate: 0 0;
   }
+
+  .about_me_post {
+    padding: 1.3rem;
+  }
+
+  .about_me_post > h3 {
+    margin-bottom: .5rem;
+  }
 }
 
 /*
