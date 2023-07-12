@@ -64,7 +64,7 @@ body {
   position: absolute;
   right: 30vw;
 
-  width: clamp(7rem, 14vw, 20rem);
+  width: clamp(10rem, 14vw, 20rem);
   aspect-ratio: 1;
 
   border-radius: 50%;
@@ -101,6 +101,15 @@ body {
   margin-bottom: .5rem;
 }
 
+@media only screen and (max-width: 1000px) {
+  .about_me > img {
+    position: relative;
+    right: 0;
+
+    translate: 0 0;
+  }
+}
+
 /*
   projects
 */
@@ -126,11 +135,13 @@ body {
   flex-direction: column;
   gap: .5rem;
 
+  padding: .5rem;
+
   animation-delay: .3s;
 }
 
-.project > a {
-  font-size: 1.6rem;
+.project > h3 > a {
+  font-weight: normal;
   width: fit-content;
 }
 
@@ -141,6 +152,12 @@ body {
 
 .project_images > img {
   height: 2.5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .projects > div {
+    margin-left: 1.5rem;
+  }
 }
 
 /*
@@ -185,4 +202,14 @@ body {
 
 .tool > img {
   width: clamp(6rem, 8.5vw, 15rem);
+}
+
+@media only screen and (max-width: 1000px) {
+  .tools {
+    gap: 3rem;
+  }
+
+  .tools > div {
+    margin-left: 1.5rem;
+  }
 }
