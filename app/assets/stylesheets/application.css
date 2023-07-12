@@ -39,6 +39,12 @@ main {
   padding-bottom: 4.5rem;
 }
 
+@media only screen and (max-width: 700px) {
+  main {
+    margin-top: 5vh;
+  }
+}
+
 /*
   general
 */
@@ -81,6 +87,24 @@ code {
   background-color: var(--color-primary);
   padding: .1rem;
   border-radius: .2rem;
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
 }
 
 /*
@@ -195,6 +219,13 @@ nav > div > a {
   font-size: 1.125rem;
 }
 
+@media only screen and (max-width: 600px) {
+  nav > div {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
 /*
   footer
 */
@@ -220,4 +251,5 @@ footer > span {
 
 footer > span > p {
   font-size: 1rem;
+  text-align: center;
 }
