@@ -9,7 +9,7 @@ a {
   display: inline-block;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
   main {
     width: 60vw;
     margin-left: 20vw;
@@ -101,7 +101,7 @@ label {
   color: var(--color-text-dark);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
   .contact_form {
     width: 60vw;
   }
