@@ -101,7 +101,7 @@ body {
   margin-bottom: .5rem;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
   .about_me > img {
     position: relative;
     right: 0;
@@ -166,7 +166,7 @@ body {
   height: 2.5rem;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
   .projects {
     margin-top: 30vh;
   }
@@ -220,7 +220,7 @@ body {
   width: clamp(6rem, 8.5vw, 15rem);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
   .tools {
     margin-top: 30vh;
     gap: 3rem;
