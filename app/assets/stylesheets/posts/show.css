@@ -6,6 +6,13 @@ main {
   margin-left: 30vw;
 }
 
+@media only screen and (max-width: 1000px) {
+  main {
+    margin-left: 20vw;
+    width: 60vw;
+  }
+}
+
 /*
   post body
 */
@@ -59,6 +66,12 @@ svg {
   gap: .5rem;
 }
 
+@media only screen and (max-width: 1000px) {
+  svg {
+    scale: .9;
+  }
+}
+
 /*
   post navigation
 */
@@ -75,4 +88,14 @@ svg {
   flex-direction: column;
   
   font-size: 1.25rem;
+}
+
+.post_navigate > div:last-child {
+  align-items: flex-end;
+}
+
+@media only screen and (max-width: 1000px) {
+  .post_navigate > div {
+    font-size: 1rem;
+  }
 }

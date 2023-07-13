@@ -9,6 +9,13 @@ a {
   display: inline-block;
 }
 
+@media only screen and (max-width: 1000px) {
+  main {
+    width: 60vw;
+    margin-left: 20vw;
+  }
+}
+
 /*
   contact information
 */
@@ -92,4 +99,18 @@ label {
 .notice {
   margin-left: .8rem;
   color: var(--color-text-dark);
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact_form {
+    width: 60vw;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  .submit {
+    font-size: 1rem;
+  }
 }

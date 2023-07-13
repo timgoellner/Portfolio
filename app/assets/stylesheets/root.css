@@ -116,6 +116,10 @@ body {
   .about_me_post > h3 {
     margin-bottom: .5rem;
   }
+
+  .about_me_post > a {
+    font-size: 1.2rem;
+  }
 }
 
 /*
@@ -163,6 +167,10 @@ body {
 }
 
 @media only screen and (max-width: 1000px) {
+  .projects {
+    margin-top: 30vh;
+  }
+
   .projects > div {
     margin-left: 1.5rem;
   }
@@ -214,6 +222,7 @@ body {
 
 @media only screen and (max-width: 1000px) {
   .tools {
+    margin-top: 30vh;
     gap: 3rem;
   }
 
