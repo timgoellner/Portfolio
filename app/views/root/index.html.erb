@@ -16,11 +16,13 @@
     <%= image_tag 'root/pp.jpg', alt: 'Profile Image', class: 'animation_fadeIn' %>
     <h1 class='animation_appear'>Hi, I'm Tim.<br>I do programming.</h1>
     <p class='animation_fadeIn'>I'm a 16 year old German hobby software developer.<br>In my free time, I play Games and do competitive swimming.</p>
-    <div class='about_me_post animation_fadeIn'>
-      <h3>Latest Post:</h3>
-      <%= link_to @latest_post.title, "posts/#{@latest_post.id}" %>
-      <p><%= @latest_post.description%></p>
-    </div>
+    <% unless @latest_post.nil? %>
+      <div class='about_me_post animation_fadeIn'>
+        <h3>Latest Post:</h3>
+        <%= link_to @latest_post.title, "posts/#{@latest_post.id}" %>
+        <p><%= @latest_post.description%></p>
+      </div>
+    <% end %>
   </section>
 
   <section class='projects'>
