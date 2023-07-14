@@ -20,7 +20,11 @@ class ContactController < ApplicationController
       }]
     }
 
-    webhook_url = File.open(Rails.root.join('config', 'secure', 'contact_webhook.key')).read
+    if Rails.env.production?
+      webhook_url = ENV["WEBHOOK_URL"]
+    else
+      webhook_url = File.open(Rails.root.join('config', 'secure', 'contact_webhook.key')).read
+    end
 
     res = HTTParty.post(webhook_url, body: JSON.generate(info_msg), headers: { 'Content-Type': 'application/json' })
 
