@@ -33,6 +33,9 @@ gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 # POST requests for contact
 gem 'httparty', '~> 0.21.0'
 
+# Production DB
+gem 'pg', '~> 1.5', '>= 1.5.3'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
