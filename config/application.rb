@@ -14,6 +14,8 @@ module Portfolio
     # Prevent default Rails error handling
     config.exceptions_app = self.routes
 
+    config.logger = Logger.new(STDOUT)
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
