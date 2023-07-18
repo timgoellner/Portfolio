@@ -1,7 +1,9 @@
 # README
 
 ## Docker Network
+```shell
 docker network create portfolio
+```
 
 ## NGINX + LetsEncrypt
 ```shell
