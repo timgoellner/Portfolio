@@ -7,7 +7,6 @@ docker network create portfolio
 
 ## NGINX + LetsEncrypt
 ```shell
-docker-compose build
 docker-compose up -d
 
 docker-compose stop
