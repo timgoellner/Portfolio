@@ -24,4 +24,5 @@ docker run -d --rm -it --name portfolio --env-file ./portfolio/.env -v app-stora
 ```shell
 mkdir psql/postgres-data
 docker build -t psql ./psql/.
-docker run -d --rm -it --name postgres --env-file ./psql/.env -v postgres-data:/var/lib/postgresql/data --network portfolio psql
+docker run -d --rm -it --name postgres --env-file ./psql/.env -v postgres-data:/var/lib/postgresql/data --network portfolio psq
+```
