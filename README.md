@@ -1,11 +1,12 @@
 # README
 
 ## Docker Network
+```shell
 docker network create portfolio
+```
 
 ## NGINX + LetsEncrypt
 ```shell
-docker-compose build
 docker-compose up -d
 
 docker-compose stop
@@ -23,4 +24,4 @@ docker run -d --rm -it --name portfolio --env-file ./portfolio/.env -v app-stora
 ```shell
 mkdir psql/postgres-data
 docker build -t psql ./psql/.
-docker run -d --name postgres --env-file ./psql/.env -v postgres-data:/var/lib/postgresql/data --network portfolio psql
+docker run -d --rm -it --name postgres --env-file ./psql/.env -v postgres-data:/var/lib/postgresql/data --network portfolio psql
