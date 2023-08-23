@@ -1,4 +1,9 @@
-# README
+My personal portfolio website and blog with the following technologies:
+- Ruby On Rails web app
+- PostgreSQL database
+- Nginx reverse proxy
+
+Down below are the steps to create the docker network and start the different docker container.
 
 ## Docker Network
 ```shell
@@ -8,9 +13,6 @@ docker network create portfolio
 ## NGINX + LetsEncrypt
 ```shell
 docker-compose up -d
-
-docker-compose stop
-docker-compose start
 ```
 
 ## Rails
