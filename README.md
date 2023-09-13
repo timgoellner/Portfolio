@@ -3,7 +3,7 @@ My personal portfolio website and blog with the following technologies:
 - PostgreSQL database
 - Nginx reverse proxy
 
-Down below are the steps to create the docker network and start the different docker container.
+Down below are the steps to create the docker network and start the different docker containers.
 
 ## Docker Network
 ```shell
